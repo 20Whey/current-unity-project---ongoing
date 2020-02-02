@@ -31,13 +31,6 @@ public class Mobe : MonoBehaviour
         {
             rb.AddForce(transform.forward * thrust);
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Rotate(6f, 0f * Time.deltaTime, 0f);
-        }
-        if (Input.GetKey(KeyCode.W)) 
-        {
-            transform.Rotate(-6f, 0f * Time.deltaTime, 0f);
-        }
+       
     }
 }

@@ -238,7 +238,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586005402}
   m_Material: {fileID: 13400000, guid: ecd65621c15f380409300a75779e5f3b, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -632,7 +632,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222092122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.120471954, y: -0.29616928, z: -366}
+  m_LocalPosition: {x: 0.7, y: 0.4, z: -366}
   m_LocalScale: {x: 100, y: 114.728806, z: 100}
   m_Children:
   - {fileID: 5545936814713261694}
@@ -813,7 +813,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &1655275076
 MonoBehaviour:
@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1221605754}
-  offset: {x: 0, y: 230.76, z: 0}
+  offset: {x: 0, y: 135.77, z: 0}
   heightDamping: 0
   targetRigidbody: {fileID: 1655275075}
   rotationSnapTime: 0.3
@@ -943,7 +943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771730640}
   m_LocalRotation: {x: 0.70723015, y: 0, z: 0, w: 0.7069834}
-  m_LocalPosition: {x: 64, y: 825, z: -562}
+  m_LocalPosition: {x: 64, y: 269, z: -383}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1237,7 +1237,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0.5
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1261,13 +1261,27 @@ GameObject:
   - component: {fileID: 8958479361533888292}
   - component: {fileID: 2017563327790131663}
   - component: {fileID: 4018406510186415089}
-  m_Layer: 0
+  - component: {fileID: 3638925113643228524}
+  m_Layer: 8
   m_Name: Torus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &3638925113643228524
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3638925113643228523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.2500005
+  m_Center: {x: -0.000000007450581, y: 0, z: -0.000000029802322}
 --- !u!23 &4018406510186415089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1279,7 +1293,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_MotionVectors: 1
+  m_MotionVectors: 2
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 1
@@ -1314,8 +1328,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8839574304009501805}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0.0009185226, z: -0.027}
-  m_LocalScale: {x: 0.04, y: 0.4, z: -0.03}
+  m_LocalPosition: {x: 0.01, y: 0.019716334, z: -0.027000122}
+  m_LocalScale: {x: 0.04, y: 0.09999999, z: -0.03}
   m_Children:
   - {fileID: 8958479361533888292}
   m_Father: {fileID: 1221605754}
@@ -1330,13 +1344,26 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5545936814713261694}
-  m_Layer: 0
+  - component: {fileID: 8839574304009501806}
+  m_Layer: 8
   m_Name: EnergyShield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8839574304009501806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8839574304009501805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7801cd71f881e4a84457d9cb4c96b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8958479361533888292
 Transform:
   m_ObjectHideFlags: 0
@@ -1345,8 +1372,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3638925113643228523}
   m_LocalRotation: {x: -0.7071068, y: -0.00000013240823, z: -0.00000013240823, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1.1060114}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalScale: {x: 5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 5545936814713261694}
   m_RootOrder: 0
