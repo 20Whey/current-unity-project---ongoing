@@ -6,20 +6,24 @@ public class Dissappear : MonoBehaviour
 {
     public KeyCode exist;
     
-    bool SetActive;
+    
+    public GameObject Shield;
+    void Start()
+    {
 
+    }
     void Update()
     {
        
 
 
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKeyDown(exist))
         {
-            GameObject(Self).SetActive(true);
+            Shield.SetActive(true);
         }
-        else if (Input.GetKey(KeyCode.R) != true)
+        else if (Input.GetKeyUp(exist))
         {
-            GameObject(Self).SetActive(false);
+            Shield.SetActive(false);
         }
     }
 }
